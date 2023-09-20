@@ -9,7 +9,6 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <body>
         <SessionProvider session={session}>
-        <Navbar/>
         {children}
         </SessionProvider>
         </body>
