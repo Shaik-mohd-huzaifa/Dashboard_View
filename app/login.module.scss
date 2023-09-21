@@ -98,3 +98,152 @@
         text-align: center;
     }
 }
+
+.iconshidden{
+    display: none;
+}
+
+@media screen and (max-width:1080px) {
+    .logincontainer{
+        padding: 80px 60px;
+        row-gap: 10px;
+    }    
+}
+
+
+@media screen and (max-width: 1050px) {
+    .diagnol{
+        display: none;
+    }
+    .view{
+        width: 40%;
+        background-image: linear-gradient(#4285F4, #286DE0);
+    }
+    .brandContainer{
+        width: 100%;
+    }
+    .logincontainer{
+        font-size: 13px;
+        padding-right: 0;
+        width: 60%;
+    }
+    .btnContainer button span{
+        font-size: 13px;
+    }
+    .formContainer{ 
+        width: 350px;
+    form{
+        width: 100%;
+        label, a{
+            font-size: 13px;
+        }
+    }
+    p{
+        width: 100%;
+    }
+}
+.brandContainer{
+    h2{
+        font-size: 50px;
+    }
+    .icons{
+        img{
+            width: 30px;
+        }
+    }
+}
+}
+
+@media screen and (max-width: 750px){
+    .mainContainer{
+        overflow-y: scroll;
+    }
+    .iconshidden{
+        // visibility: visible;
+        width: 100%;
+        display: flex;
+        column-gap: 10px;
+        align-self: flex-end;
+        justify-content: center;
+        background-image: linear-gradient(#4285F4, #286DE0);
+        img{
+            width: 30px;
+
+        }
+    }
+    .icons{
+        display: none;
+    }
+    .mainContainer{
+        flex-direction: column;
+        height: 100vh;
+        .view{
+            width: 100%;
+            height: 60px;
+            .contents{
+                width: 100%;
+                height: 60px;
+                position: relative;
+                background-color: #286DE0;
+                display: flex;
+                .logo{
+                    width: 30%;
+                    height: 60px;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    img{
+                        width: 35px;
+                        margin: 0;
+                        margin-left: 20px;
+                    }
+                }
+                .brandContainer{
+                    width: 70%;
+                    height: 60px;
+                    padding: 0px;
+                    flex-direction: row;
+                    justify-content: right;
+                    align-items: center;
+                    h2{
+                        width: 100%;
+                        text-align: right;
+                        padding-right: 30px;
+                        box-sizing: border-box;
+                        display: block;
+                        font-size: 20px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .logincontainer{
+            width: 100%;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .headerContainer{
+                h2{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 25px;
+                    margin-bottom: 5px;
+                }
+            }
+            .formContainer{
+                height: fit-content;
+                min-height: fit-content;
+
+                form{
+                    height: fit-content;
+                }
+            }
+        }
+        
+    }
+    .iconshidden{
+        height: 50px;
+    }
+}

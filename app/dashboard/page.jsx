@@ -11,7 +11,7 @@ const Dashboard = () => {
     return (
         <>
         <button className="btn" onClick={() => signOutprocess()}>Click to logout</button>
-        <div>This is dashboard : {session.user.name}</div>
+        <div>This is dashboard : {session?.user?.name}</div>
         </>
     )
 }
