@@ -7,3 +7,11 @@
 *{
   font-family: 'Inter', sans-serif;
 }
+
+main{
+  margin: 0;
+}
+
+body{
+  overflow: hidden;
+}

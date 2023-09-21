@@ -1,9 +1,9 @@
-import LoginContainer from "./Components/login/Login"
+import LoginContainer from "./Components/Login"
 import Navbar from "./Components/navbar"
 export default function Home() {
   return (
-    <main className="container mx-auto">
+    <>
       <LoginContainer/>
-    </main>
+      </>
   )
 }

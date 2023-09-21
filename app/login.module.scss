@@ -1,0 +1,100 @@
+.mainContainer{
+    width: 100%;
+    height: 700px;
+    margin: 0;
+    display: flex;
+
+}
+
+.view{
+    width: 50%;
+    position: relative;
+
+}
+
+.diagnol{
+    width: 110%;
+    height: 150vh;
+    position: absolute;
+    top: -15%;
+    left: -16%;
+    transform: rotate(10deg);
+    background-image: linear-gradient(#4285F4, #286DE0);
+}
+
+.contents{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+.logo{
+    width: 100%;
+    img{
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+}
+
+.brandContainer{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+        font-size: 70px;
+        font-weight: 600;
+        color: white;
+        margin-top: 190px;
+    }
+}
+
+.icons{
+    display: flex;
+    width: fit-content;
+    column-gap: 20px;
+}
+
+
+.logincontainer{
+    width: 50%;
+    height: 700px;
+    box-sizing: border-box;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+    row-gap: 20px;
+}
+
+.headerContainer{
+    margin-bottom: 10px;
+    h2{
+        margin-bottom: 10px;
+    }
+}
+
+.btnContainer{
+    width: fit-content;
+    display: flex;
+    column-gap: 5px;
+
+}
+
+.formContainer{
+    form{
+        width: 400px;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    p{
+        width: 400px;
+        text-align: center;
+    }
+}
