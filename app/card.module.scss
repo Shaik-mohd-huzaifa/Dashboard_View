@@ -1,0 +1,31 @@
+.cardcontainer{
+ width: 25%;
+ padding: 10px;
+ border-radius: 10px;
+ background-color: aquamarine;
+}
+
+.title{
+    font-size: 15px;
+}
+
+.pricingContainer{
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+
+.price{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.percentage{
+    height: fit-content;
+    font-size: 10px;
+    padding: 3px 5px;
+    border-radius: 25px;
+    background-color: chartreuse;
+}

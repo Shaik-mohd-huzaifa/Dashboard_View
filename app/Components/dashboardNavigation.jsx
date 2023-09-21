@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Styles from '../dashboard.module.scss';
+import Styles from '../dashboardSideNav.module.scss';
 const Navigation = () => {
     return (
         <div className={Styles.navigation}>
