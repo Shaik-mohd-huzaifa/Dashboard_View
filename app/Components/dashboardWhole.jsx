@@ -7,6 +7,8 @@ import { getData} from '../api/getdata';
 import Card from './analyticsCard';
 import DashboardNavbar from './dashboardNavbar'
 
+const colors = ["#80dc93", "#debf85", "#eaa4a3", "#a9b0e6"]
+
 export const DashboardAnalysis = () => {
     const [data, setdata] = useState([]);
     useEffect(() => {
@@ -19,8 +21,8 @@ export const DashboardAnalysis = () => {
             <DashboardNavbar/>
             <div className={Styles.miniAnalysisContainer}>
             {
-                data.map(card => (
-                    <Card key={card.id} imgsrc={`/${card.title}.png`} title={card.title} price={card.price} percentage={card.percentage}  />
+                data.map((card, index) => (
+                    <Card key={card.id} bgColor={colors[index]} imgsrc={`/${card.title}.svg`} title={card.title} price={card.price} percentage={card.percentage}  />
                     ))
                 }
                 </div>

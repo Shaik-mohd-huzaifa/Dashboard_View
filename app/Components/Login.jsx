@@ -4,14 +4,15 @@ import Image from 'next/image';
 import {useSession, signIn, signOut} from 'next-auth/react';
 import Styles from './../login.module.scss';
 import { redirect } from 'next/dist/server/api-utils';
+import { useEffect } from 'react';
 
 const LoginContainer = () => {
   const {data:session} = useSession();
 
+  console.log(session);
   if(session && session.user){
     window.location.href = '/dashboard';
   }
-
     return(
     <div className={`${Styles.mainContainer} bg-zinc-50`}>
         <div className={Styles.view}>

@@ -1,0 +1,41 @@
+.DNcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    h2{
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+
+.profileContainer{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    .signinImg{
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.inputContainer{
+    position: relative;
+    input{
+        width: 100%;
+        padding: 5px 10px;
+        border-radius: 7px;
+    }
+    input:focus, input:focus-visible{
+        border: 0;
+        outline: 0;
+    }
+    img{
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+}

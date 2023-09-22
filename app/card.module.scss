@@ -1,8 +1,24 @@
 .cardcontainer{
  width: 25%;
- padding: 10px;
+ padding: 15px;
  border-radius: 10px;
- background-color: aquamarine;
+ background-color: white;
+ border: 3px solid #E0e0e0;
+//  box-shadow: 2px 2px 2px #E0E0E0, -2px -2px 2px #E0E0E0;
+    .imgContainer{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        margin-bottom: 5px;
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    }
 }
 
 .title{
@@ -19,13 +35,16 @@
 
 .price{
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .percentage{
     height: fit-content;
-    font-size: 10px;
+    font-size: 12px;
     padding: 3px 5px;
     border-radius: 25px;
-    background-color: chartreuse;
+    background-color: #e9f9ec;
+    color: #4ac15a;
+    font-weight: 500;
+    
 }

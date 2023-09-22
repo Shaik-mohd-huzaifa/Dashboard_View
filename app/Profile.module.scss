@@ -1,0 +1,30 @@
+.profileContainer{
+    position: relative;
+    img{
+        border-radius: 50%;
+    }
+    .profilelinks{
+        width: 150px;
+        background-color: white;
+        position: absolute;
+        bottom: -135px;
+        box-shadow: -1px 1px 5px rgb(98, 98, 98);
+        padding: 15px 15px;
+        right: 0;
+        border-radius: 10px;
+        li{
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            list-style: none;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        li:nth-of-type(3){
+            margin-bottom: 0;
+        }
+        img{
+            height: 20px;
+        }
+    }
+}
