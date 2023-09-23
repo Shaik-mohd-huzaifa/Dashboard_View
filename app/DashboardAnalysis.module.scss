@@ -1,10 +1,25 @@
 .AnalyticsContainer{
-    width: 75%;
-    padding: 10px;  
+    width: 80%;
+    padding: 10px; 
+    overflow-y: scroll; 
+    position: relative;
 }
 
 .miniAnalysisContainer{
     width: 100%;
     display: flex;
     column-gap: 20px;
+}
+
+.AnalyticsContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Set the scrollbar thumb color */
+    border-radius: 10px; /* Optional: Add rounded corners to the scrollbar thumb */
+  }
+
+.boxes{
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+    padding-top: 20px;
+    height: 360px;
 }

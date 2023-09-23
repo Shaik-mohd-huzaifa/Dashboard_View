@@ -1,0 +1,13 @@
+.PopupContainer{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .PopUp{
+        width: 400px;
+        height: 350px;
+        background-color: white;
+    } 
+}

@@ -1,0 +1,32 @@
+.ProfileCard{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+ background-color: white;
+ border: 3px solid #E0e0e0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.AddIconContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    .Button{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F2F2F2;
+    }
+    .Button:hover{
+        border: 2px dashed black;
+    }
+    p{
+        font-size: 14px;
+        color: #858585;
+    }
+}
