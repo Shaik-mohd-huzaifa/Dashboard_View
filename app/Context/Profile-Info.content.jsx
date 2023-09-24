@@ -2,14 +2,14 @@
 import { createContext, useEffect, useState } from "react";
 
 const userinfo = {
-    name: "",
-    email: "",
-    phone: "",
+    name: null,
+    email: null,
+    phone: null,
 }
 
 const socialDetails = {
-    youtube: "",
-    instagram: ""
+    youtube: null,
+    instagram: null
 }
 
 export const ProfileInfoContext = createContext({

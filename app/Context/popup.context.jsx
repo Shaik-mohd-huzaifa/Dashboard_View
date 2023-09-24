@@ -9,7 +9,7 @@ export const PopupContext = createContext({
     })
 
 export const PopUpContextProvider = ({children}) => {
-    const [popUpOpen, setPopUp] = useState(true);
+    const [popUpOpen, setPopUp] = useState(false);
 
     const value = {
         popUpOpen, setPopUp

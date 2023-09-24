@@ -25,15 +25,15 @@ const BasicsForm = () => {
         <div className={Styles.formContainer}>
             <div className={Styles.inputBox}>
                 <label htmlFor="name">Username<sup>*</sup></label>
-                <input type="text" name="name" placeholder="Eg. John Doe" onChange={e => setName(e.target.value)} value={name}/>
+                <input type="text" required name="name" placeholder="Eg. John Doe" onChange={e => setName(e.target.value)} value={name}/>
             </div>
             <div className={Styles.inputBox}>
                 <label htmlFor="name">Email<sup>*</sup></label>
-                <input type="text" name="Email" placeholder="Eg. John@xyz.com" onChange={e => setEmail(e.target.value)} value={email}/>
+                <input type="text" required name="Email" placeholder="Eg. John@xyz.com" onChange={e => setEmail(e.target.value)} value={email}/>
             </div>
             <div className={Styles.inputBox}>
                 <label htmlFor="name">Phone<sup>*</sup></label>
-                <input type="text" name="Phone" placeholder="Eg. John@xyz.com" onChange={e => setPhone(e.target.value)} value={phone}/>
+                <input type="text" required name="Phone" placeholder="Eg. John@xyz.com" onChange={e => setPhone(e.target.value)} value={phone}/>
             </div>
             <div className={Styles.buttonContainer}>
             <button onClick={() => handlebasic()}>Next</button>

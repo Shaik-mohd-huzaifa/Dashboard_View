@@ -13,9 +13,11 @@ const SocialForm = () => {
     const [instagramLink, setInstagramLink] = useState(socialProfile.instagram)
     const handlePrev = () => {
         setBasicState(!basicOpen);
+        setSocialState(!socialOpen);
     }
 
     const handleSocialAndSubmission = () => {
+        setBasicState(!basicOpen);
         setSocialState(!socialOpen);
         setPopUp(!popUpOpen);
         setSocialProfile({
@@ -29,11 +31,11 @@ const SocialForm = () => {
         <div className={Styles.formContainer}>
             <div className={Styles.inputBox}>
                 <label htmlFor="Instagram">Instagram Link (Optional)</label>
-                <input type="text" name="Instagram" value={instagramLink}  placeholder="Eg. ..instagram.com/username"/>
+                <input type="text" name="Instagram" onChange={(e) => setInstagramLink(e.target.value)} value={instagramLink}  placeholder="Eg. ..instagram.com/username"/>
             </div>
             <div className={Styles.inputBox}>
                 <label htmlFor="Youtube">Youtube Link (Optional)</label>
-                <input type="text" name="Youtube" value={instagramLink} placeholder="Eg. ..youtebe/username"/>
+                <input type="text" name="Youtube" onChange={(e) => setYoutubeLink(e.target.value)}value={youtubeLink} placeholder="Eg. ..youtebe/username"/>
             </div>
             <div className={Styles.buttonContainer}>
                 <button onClick={() => handlePrev()}>Prev</button>
