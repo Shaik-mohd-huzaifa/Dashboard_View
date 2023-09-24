@@ -1,7 +1,7 @@
 'use client'
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
-const userDetails = {
+const userinfo = {
     name: "",
     email: "",
     phone: "",
@@ -13,14 +13,14 @@ const socialDetails = {
 }
 
 export const ProfileInfoContext = createContext({
-    userDetails: userDetails,
+    userDetails: userinfo,
     setUserDetails: () => {},
     socialProfile: socialDetails,
     setSocialProfile: () => {}
 })
 
 export const ProfileInfoProvider = ({children}) => {
-    const [userDetails, setUserDetails] = useState(userDetails);
+    const [userDetails, setUserDetails] = useState(userinfo);
     const [socialProfile, setSocialProfile] = useState(socialDetails);
     const value = {
         userDetails,
@@ -28,6 +28,7 @@ export const ProfileInfoProvider = ({children}) => {
         socialProfile,
         setSocialProfile
     }
+
     return(
         <ProfileInfoContext.Provider value={value}>
             {children}

@@ -3,23 +3,15 @@ import Styles from '../Popup.module.scss';
 import Image from 'next/image';
 import { useContext, useState } from 'react';
 import { PopupContext } from '../Context/popup.context';
+import {PopupFormToggle} from '../Context/Toggle-Popup'
+import BasicsForm from './basics-form'
+import SocialForm from './Social-form'
+
 const PopUp = () => {
     const {popUpOpen, setPopUp} = useContext(PopupContext);   
-    const [basicOn, setBasic] = useState(true);
-    const [SocialOn, setSocial] = useState(false);
+    const {basicOpen, socialOpen} = useContext(PopupFormToggle);   
     const handleProfilePopUp = (e) => {
         setPopUp(!popUpOpen)
-    }
-
-    const handleToggle = (e) => {
-        console.log(e);
-        let value = e.target.value;
-        if(value == "basics"){
-            basicOn(true)
-        }else{
-            basicOn(false)
-            SocialOn(true)
-        }
     }
 
     return (
@@ -30,15 +22,17 @@ const PopUp = () => {
                 <Image src="/Controls.svg" width="20" height="20" alt="Close" onClick={() => {handleProfilePopUp()}}/>
             </div>
         <div className={Styles.Options}>
-            <div className={`${Styles.Option} ${basicOn && Styles.active}`} value="basics" onClick={(e) => handleToggle(e)}>
+            <div className={`${Styles.Option} ${basicOpen && Styles.active}`} id="basics">
                 <h2>Basic</h2>
                 <div className={Styles.line}></div>
             </div>
-            <div className={`${Styles.Option} ${SocialOn && Styles.active}`} onClick={() => handleToggle()}>
+            <div className={`${Styles.Option} ${socialOpen && Styles.active}`} id="social">
                 <h2>Social</h2>
                 <div className={Styles.line}></div>
             </div>
         </div>
+        {basicOpen && <BasicsForm/>}
+        {socialOpen && <SocialForm/>}
         </div>
        </div> 
     )
