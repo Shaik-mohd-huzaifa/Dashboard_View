@@ -10,7 +10,7 @@ import { PopupContext } from './../Context/popup.context';
 
 
 const Dashboard = () => {
-    const {popUpOpen} = useContext(PopupContext); 
+    const {popUpOpen} = useContext(PopupContext);
     return (
         <div className={Styles.dashboardContainer}>
             <Navigation/>

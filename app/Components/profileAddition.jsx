@@ -11,14 +11,14 @@ const ProfileCard = () => {
     const {userDetails, socialProfile} = useContext(ProfileInfoContext)
     return (
         <div className={Styles.ProfileCard}>
-            { userDetails.name || userDetails.email || userDetails.phone || socialProfile.instagram || socialProfile.youtube ? <div className={Styles.AddIconContainer}>
+            { userDetails.name || userDetails.email || userDetails.phone || socialProfile.instagram || socialProfile.youtube ? <DisplayProfileData/> : (<div className={Styles.AddIconContainer}>
             <div className={Styles.Button} onClick={() => setPopUp(!popUpOpen)}>
             <Image src="/controls.svg" width="50" height="50" alt="Add Profile" />
             </div>
             <p>
                 Add Profile
             </p>
-            </div> : <DisplayProfileData/>}
+            </div>)}
         </div>
     )
 }

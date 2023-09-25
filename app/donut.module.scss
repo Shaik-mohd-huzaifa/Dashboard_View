@@ -48,3 +48,30 @@
         }
     }
 }
+
+
+@media screen and (max-width: 1380px) {
+    .DonutChartContainer{
+        .Dougnutcontainer{
+            width: 180px;
+            height: 180px;
+        }
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .DonutChartContainer{
+        height: 270px;
+        .Dougnutcontainer{
+            width: 150px;
+            height: 150px;
+        }
+        .labelContainer{
+            .label{
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

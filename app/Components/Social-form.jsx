@@ -22,8 +22,8 @@ const SocialForm = () => {
         setPopUp(!popUpOpen);
         setSocialProfile({
             ...socialProfile,
-            youtubeLink, 
-            instagramLink
+            youtube: youtubeLink, 
+            instagram: instagramLink
         })
     }
 
@@ -35,11 +35,11 @@ const SocialForm = () => {
             </div>
             <div className={Styles.inputBox}>
                 <label htmlFor="Youtube">Youtube Link (Optional)</label>
-                <input type="text" name="Youtube" onChange={(e) => setYoutubeLink(e.target.value)}value={youtubeLink} placeholder="Eg. ..youtebe/username"/>
+                <input type="text" name="Youtube" onChange={(e) => setYoutubeLink(e.target.value)} value={youtubeLink} placeholder="Eg. ..youtebe/username"/>
             </div>
             <div className={Styles.buttonContainer}>
                 <button onClick={() => handlePrev()}>Prev</button>
-                <button onClick={() => handleSocialAndSubmission()}>Done</button>
+                <button onClick={() => handleSocialAndSubmission()}>Done</button> 
             </div>
         </div>
     )
