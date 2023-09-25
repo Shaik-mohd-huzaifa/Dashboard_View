@@ -75,3 +75,25 @@
         }
     }
 }
+
+@media screen and (max-width: 1180px) {
+    .DonutChartContainer{
+        height: fit-content;
+        justify-content: center;
+    }
+    .labelContainer{
+        width: 100%;
+        margin-top: 20px;
+        align-items: center;
+        .label{
+            width: 140px;
+            align-items: flex-start;
+            height: fit-content;
+            .circle{
+                width: 10px !important;
+                border-radius: 0% !important;
+                height: 50px !important ;
+            }
+        }
+    }
+}

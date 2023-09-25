@@ -23,3 +23,10 @@
     padding-top: 20px;
     height: 360px;
 }
+
+
+@media screen and (max-width: 1180px) {
+    .boxes{
+        height: fit-content;
+    }
+}

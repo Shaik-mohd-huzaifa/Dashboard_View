@@ -67,3 +67,26 @@
         font-size: 16px;
     }
 }
+
+
+@media screen and (max-width: 1220px) {
+    .ProfileCard{
+        height: 464px;
+    }
+    .InfoContainer{
+        flex-direction: column;
+        justify-content: center;
+        img{
+            top: 10px;
+            right: 10px;
+        }
+    }
+    .info{
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+    }
+    .IndiInfoContainer{
+        justify-content: center;
+    }
+}
