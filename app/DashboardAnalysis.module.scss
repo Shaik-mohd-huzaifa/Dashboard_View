@@ -30,3 +30,10 @@
         height: fit-content;
     }
 }
+
+@media screen and (max-width: 900px){
+    .AnalyticsContainer{
+        width: 100%;
+        padding: 20px;
+    }
+}
