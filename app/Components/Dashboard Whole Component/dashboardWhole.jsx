@@ -1,6 +1,6 @@
 import Image from "next/image";
 import {signOut} from "next-auth/react";
-import Styles from '../DashboardAnalysis.module.scss';
+import Styles from './../../DashboardAnalysis.module.scss';
 import supabase from "../../api/supabase"
 import { useContext } from "react";
 import {DashboardVisibilityContext} from '../../Context/dashboardDataProvider'
