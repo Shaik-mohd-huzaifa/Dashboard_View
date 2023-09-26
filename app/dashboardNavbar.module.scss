@@ -43,3 +43,24 @@
         transform: translateY(-50%);
     }
 }
+
+@media screen and (max-width:600px) {
+    .inputContainer{
+        background-color: rgb(212, 212, 216);
+        display: flex;
+        width: 30px;
+        border-radius: 5px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        input{
+            display: none;
+        }
+        img{
+            position: sticky;
+            margin: 0;
+        }
+        
+    }
+}

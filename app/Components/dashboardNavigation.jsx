@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Styles from '../dashboardSideNav.module.scss';
+import { useState } from "react";
 const Navigation = () => {
+    const [infoOpen, setInfoOpen] = useState(false);
     return (
         <div className={Styles.navigation}>
                 <h2>.Pears</h2>
@@ -16,10 +18,11 @@ const Navigation = () => {
                     <li><Image width="20" height="20" src="setting_icon.svg" alt=""/>
                         <span>Settings</span></li>
                 </div>
-        <div className={Styles.instantlinks}>
+        <div className={`${Styles.instantlinks} ${infoOpen && Styles.active}`}>
             <a href="">Help</a>
             <a href="">Contact Us</a>
         </div>
+            <Image className={Styles.infoImage} onClick={() => setInfoOpen(!infoOpen)} src="/info.svg" width="50" height="50" alt="Info"/>
             </div>
     )
 } 

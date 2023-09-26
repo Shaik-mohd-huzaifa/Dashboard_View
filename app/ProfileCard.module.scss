@@ -90,3 +90,12 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 580px) {
+   .ProfileCard{
+    margin-top: 15px;
+    width: 100%; 
+    height: 300px;
+    margin-bottom: 70px;
+   }
+}
