@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# OpenInApp Frontend Developer Intern Assignment
 
-## Getting Started
+This project is a React application built using Next.js, Sass, Tailwind CSS, Context API for state management, Supabase for storing and fetching analytical data, and NextAuth.js for authentication (Google provider only).
 
-First, run the development server:
+## Installation and Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun run dev
-```
+To run this project on your local machine, follow these steps:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clone the repository:**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+   ```bash
+   git clone <repository_url>
+   cd <repository_name>
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. **Install dependencies:**
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Set up Supabase:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   - Create a Supabase account and set up a new project.
+   - Configure your Supabase instance and obtain the necessary credentials (URL, API Key).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. **Configure environment variables:**
 
-## Deploy on Vercel
+   Create a `.env.local` file in the project root and add the following environment variables with your Supabase credentials:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```plaintext
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_api_key
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. **Run the application:**
+
+   ```bash
+   npm run dev
+   ```
+
+   The application will be running at [http://localhost:3000](http://localhost:3000).
+
+## Authentication
+
+Authentication in this project is handled using NextAuth.js with Google provider. To set up authentication with other providers, refer to the NextAuth.js documentation.
+
+## Access the Application
+
+The application is hosted and can be accessed [here](<app_url>).
+
+Feel free to explore and interact with the app!
