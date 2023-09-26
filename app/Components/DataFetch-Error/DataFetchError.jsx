@@ -1,5 +1,5 @@
-'use client'
-import Styles from "./../dashboardErrors.module.scss"
+// 'use client'
+import Styles from "./dashboardErrors.module.scss"
 import Image from 'next/image'
 
 const DashboardDataError = () => {

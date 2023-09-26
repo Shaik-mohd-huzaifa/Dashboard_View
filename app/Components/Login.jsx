@@ -8,8 +8,6 @@ import { useEffect } from 'react';
 
 const LoginContainer = () => {
   const {data:session} = useSession();
-
-  console.log(session);
   if(session && session.user){
     window.location.href = '/dashboard';
   }

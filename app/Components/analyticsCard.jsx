@@ -2,7 +2,7 @@ import CardStyling from '../card.module.scss';
 import Image from 'next/image';
 
 const Card = ({ imgsrc, title, price, percentage, bgColor}) => {
-    console.log(imgsrc,title, price, percentage)
+
     return (
         <div className={CardStyling.cardcontainer}>
             <div className={CardStyling.imgContainer} style={{backgroundColor: bgColor}}>

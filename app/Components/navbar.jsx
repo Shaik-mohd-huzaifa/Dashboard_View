@@ -6,7 +6,6 @@ import {useSession, signIn, signOut} from 'next-auth/react';
 const Navbar = () => {
     const {data:session} = useSession();
     if(session && session.user){
-        console.log(session.user);
         return (
             <div className="">
                 <Image width="200" height="200" src={session.user.image}/>

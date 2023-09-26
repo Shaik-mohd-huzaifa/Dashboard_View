@@ -1,4 +1,7 @@
 .DNcontainer{
+    img{
+        cursor: pointer;
+    }
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -24,6 +27,7 @@
         height: 30px;
     }
 }
+
 
 .inputContainer{
     position: relative;

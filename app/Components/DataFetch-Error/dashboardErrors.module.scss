@@ -1,0 +1,34 @@
+.errorContainer{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    box-sizing: border-box;
+    .error{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 200px;
+        }
+        p{
+            width: fit-content;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        button{
+            width: fit-content;
+            width: 100px;
+            padding: 5px 10px;
+            background-color: #286DE0;
+            border-radius: 5px;
+            margin: auto;
+        }
+    }
+}
