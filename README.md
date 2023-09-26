@@ -9,8 +9,8 @@ To run this project on your local machine, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository_url>
-   cd <repository_name>
+   git https://github.com/Shaik-mohd-huzaifa/React_Intern_Assignment.git 
+   cd React_Intern_Assignment
    ```
 
 2. **Install dependencies:**
