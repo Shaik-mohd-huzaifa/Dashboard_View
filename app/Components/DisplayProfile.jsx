@@ -12,14 +12,14 @@ const DisplayProfileData = () => {
         <div className={Styles.InfoContainer}>
             { (userDetails.name || userDetails.email || userDetails.phone) && (<div className={Styles.info}>
                 {userDetails.name && <IndiviualInfo imgsrc="/user-20.png" value={userDetails.name} title="username" />}
-                {userDetails.email && <IndiviualInfo imgsrc="/email.png" value={userDetails.email} title="Email" />}
+                {userDetails.email && <IndiviualInfo imgsrc="/mail.png" type="link" value={userDetails.email} title="Email" />}
                 {userDetails.phone && <IndiviualInfo imgsrc="/phone.png" value={userDetails.phone} title="Phone" />}
             </div>)}
             {
                 (socialProfile.instagram || socialProfile.youtube) && (
                     <div className={Styles.info}>
-                    {socialProfile.instagram && <IndiviualInfo imgsrc="/instagram.png" value={socialProfile.instagram} title="instagram"/>}
-                    {socialProfile.youtube && <IndiviualInfo imgsrc="/youtube.png" value={socialProfile.youtube} title="youtube"/>}
+                    {socialProfile.instagram && <IndiviualInfo imgsrc="/instagram.png" type="link" value={socialProfile.instagram} title="instagram"/>}
+                    {socialProfile.youtube && <IndiviualInfo imgsrc="/youtube.png" type="link" value={socialProfile.youtube} title="youtube"/>}
                     </div>
     )
             }

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 
 export const PopupContext = createContext({
-    popUpOpen: null,
+    popUpOpen: false,
     setPopUp:()=> null
     })
 

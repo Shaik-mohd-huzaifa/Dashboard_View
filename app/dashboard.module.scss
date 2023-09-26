@@ -7,4 +7,12 @@
     height: 900px;
     justify-content: center;
     max-height: 100vh;
+    position: relative;
+}
+
+
+@media screen and (max-width: 900px) {
+    .dashboardContainer{
+        padding: 0px;
+    }
 }
