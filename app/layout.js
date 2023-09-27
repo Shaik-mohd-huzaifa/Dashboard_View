@@ -16,7 +16,7 @@ export default async function RootLayout({ children }) {
         <DashboardVisibilityProvider>
         <PopUpContextProvider>
           <PopupFormToggleProvider>
-        <SessionProvider session={session}>
+        <SessionProvider session={session} basePath='https://react-intern-assignment-cjk7how6u-shaik-mohd-huzaifa.vercel.app/api/auth'>
         {children}
         </SessionProvider>
         </PopupFormToggleProvider>
