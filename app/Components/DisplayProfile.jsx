@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import { useContext, useState} from "react";
 import {ProfileInfoContext} from './../Context/Profile-Info.content'

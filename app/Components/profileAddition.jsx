@@ -1,3 +1,4 @@
+'use state'
 import Image from 'next/image';
 import Styles from '../ProfileCard.module.scss'
 import { useState } from 'react';

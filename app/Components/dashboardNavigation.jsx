@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image"
 import Styles from '../dashboardSideNav.module.scss';
 import { useState } from "react";

@@ -1,3 +1,4 @@
+'use client'
 import { useContext, useEffect, useState } from "react";
 import {ProfileInfoContext} from './../Context/Profile-Info.content';
 import Styles from './../form.module.scss';
