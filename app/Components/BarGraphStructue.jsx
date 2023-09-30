@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useState } from 'react'
 import data from '../api/Bar-Graph-data'
 import Graph from './BarGraph'
