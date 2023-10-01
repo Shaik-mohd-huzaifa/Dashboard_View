@@ -9,7 +9,7 @@ const authOption = {
             clientSecret: process.env.GOOGLE_CLIENT_SECRET
         }),
     ],
-    secret: 'AIzaSyCB5TdGg39DCc4n0TwmSnLSo5R6ZZzhKQ0' ,
+    secret: 'chiNtdOj3tcseFmaI4xyxVbSDr2HkgIwBJyxKfKfZM4=' ,
 }
 
 const handler = NextAuth(authOption);
