@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import {useSession, signOut, signIn} from 'next-auth/react'
 import NavbarStyles from '../dashboardNavbar.module.scss'
@@ -16,8 +17,8 @@ return (
         <Image src="/Vector.svg" width="20" height="20" alt='Bell Icon'/>
         {
             session ? <Profile/> : <Image className={NavbarStyles.signinImg} src="/sign-out-30.png" width="30" height="30" alt='sign in' onClick={() => window.location.href = "/"}/>
-        }
-        </div>
+             }
+            </div>
     </div>
 )
 }

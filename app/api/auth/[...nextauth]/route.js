@@ -10,7 +10,6 @@ const authOption = {
         }),
     ],
     secret: process.env.NEXTAUTH_SECRET || 'AIzaSyCB5TdGg39DCc4n0TwmSnLSo5R6ZZzhKQ0' ,
-    callbackUrl: process.env.NEXTAUTH_URL
 }
 
 const handler = NextAuth(authOption);
