@@ -14,7 +14,7 @@ const ProfileCard = () => {
         <div className={Styles.ProfileCard}>
             { userDetails.name || userDetails.email || userDetails.phone || socialProfile.instagram || socialProfile.youtube ? <DisplayProfileData/> : (<div className={Styles.AddIconContainer}>
             <div className={Styles.Button} onClick={() => setPopUp(!popUpOpen)}>
-            <Image src="/controls.svg" width="50" height="50" alt="Add Profile" />
+            <Image src="/Controls.svg" width="50" height="50" alt="Add Profile" />
             </div>
             <p>
                 Add Profile
