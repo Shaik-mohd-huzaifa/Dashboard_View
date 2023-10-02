@@ -14,6 +14,8 @@ const PopUp = () => {
         setPopUp(!popUpOpen)
     }
 
+    
+
     return (
        <div className={Styles.PopupContainer}>
         <div className={Styles.PopUp}>
