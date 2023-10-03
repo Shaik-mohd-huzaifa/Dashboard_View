@@ -1,4 +1,4 @@
-# OpenInApp Frontend Developer Intern Assignment
+# DashBoard View
 
 This project is a React application built using Next.js, Sass, Tailwind CSS, Context API for state management, Supabase for storing and fetching analytical data, and NextAuth.js for authentication (Google provider only).
 
