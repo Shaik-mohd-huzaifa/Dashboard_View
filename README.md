@@ -47,6 +47,6 @@ Authentication in this project is handled using NextAuth.js with Google provider
 
 ## Access the Application
 
-The application is hosted and can be accessed [here](<app_url>).
+The application is hosted and can be accessed [here](https://react-intern-assignment-gamma.vercel.app/).
 
 Feel free to explore and interact with the app!
